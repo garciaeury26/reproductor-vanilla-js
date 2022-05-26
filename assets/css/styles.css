@@ -8,7 +8,7 @@
 body {
     padding: 2rem;
     margin: 0;
-    background:#e8e8f0 ;
+    background:#e8e8f0 ;  
     font-family: "Poppins";
     height: 100vh;
 }
@@ -25,6 +25,7 @@ header {
 .pointer{
     cursor: pointer;
 }
+
 .icons__top {
     width: 15%;
     display: flex;
@@ -38,6 +39,10 @@ header {
 
 .icons__top span {
     font-size: .7rem;
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .icons__top img {
@@ -180,7 +185,10 @@ p {
 
 
 .reproductor__portable__box img {
+    max-width: 80px;
     border-radius: 100%;
+    width: 50%;
+    min-width: 50%;
 }
 .reproductor__portable__box .reproductor__info{
     text-align: center;

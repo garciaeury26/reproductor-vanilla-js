@@ -65,8 +65,8 @@
             <div class="reproductor__portable__box">
                 <div>
                     <div class="reproductor__info">
-                        <img src="./assets/images/mardy-bum.jfif" />
-                        <h5>Mardy Bum</h5>
+                        <img id="banner" src="./assets/images/mardy-bum.jfif" />
+                        <h5 id="song__name">Mardy Bum</h5>
                     </div>
                 </div>
 
@@ -74,13 +74,13 @@
                     <i class='bx bx-equalizer bx-lg bx-fade-left' style='color:#ffffff'  ></i>
                 </div>
 
-                <div class="player__icons">
-                    <audio id="cornerstone">
-                        <source src="./assets/audio/Mardy Bum.mp3" type="audio/mpeg">
+                <div class="player__icons" >
+                    <audio id="song">
+                        <source  id="audio" src="./assets/audio/Mardy Bum.mp3" type="audio/mpeg">
                     </audio>
-                    <i class='pointer bx bx-skip-next-circle bx-sm bx-rotate-180' style='color:rgba(230,230,230,0.98)' ></i>
+                    <i id="back" class='pointer bx bx-skip-next-circle bx-sm bx-rotate-180' style='color:rgba(230,230,230,0.98)' ></i>
                     <i id="play" class="pointer bx bx-play-circle bx-md bx-tada" style="color:rgba(238,115,115,100%)"></i>
-                    <i class='pointer bx bx-skip-next-circle bx-sm' style='color:rgba(230,230,230,0.98)' ></i>
+                    <i id="next" class='pointer bx bx-skip-next-circle bx-sm' style='color:rgba(230,230,230,0.98)' ></i>
                 </div>
             </div>
         </section>
@@ -90,7 +90,7 @@
                 <h1>Recent Songs</h1>
             </div>
 
-            <div class="songs__container">
+            <div class="songs__container" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <article class="song" id="sunflower">
                     <audio id="song__1">
                         <source src="./assets/audio/Post Malone Swae Lee  Sunflower SpiderMan Into the SpiderVerse.mp3">
