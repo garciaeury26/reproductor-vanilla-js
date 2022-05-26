@@ -18,12 +18,13 @@
         <h1>Music</h1>
 
         <div class="icons__top">
-            <i class='bx bx-bell bx-sm  bx-tada-hover'></i>
-            <i class='bx bx-cog bx-sm bx-spin-hover'></i>
-            <span>Eury Joel</span>
-            <img src="/assets/images/perfil.jfif">
+                <i class='menu__icon bx bx-menu bx-sm'></i>
+             
+                <i class='bx bx-bell bx-sm  bx-tada-hover'></i>
+                <i class='bx bx-cog bx-sm bx-spin-hover'></i>
+                <span>Eury Joel</span>
+                    <img src="/assets/images/perfil.jfif">
         </div>
-
     </header>
     <div class="main__container">
         <nav class="nav">
@@ -55,34 +56,86 @@
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                 </div>
-
                 <div class="music__image__container">
                     <img src="./assets/images/startboy.jfif" />
                 </div>
 
             </div>
 
-            <div class="reproductor__portable__box">
-                <div>
-                    <div class="reproductor__info">
-                        <img id="banner" src="./assets/images/mardy-bum.jfif" />
-                        <h5 id="song__name">Mardy Bum</h5>
+            <div class="boxes">
+                <div class="box reproductor__portable__box">
+                    <div>
+                        <div class="reproductor__info">
+                            <img id="banner" src="./assets/images/mardy-bum.jfif" />
+                            <h5 id="song__name">Mardy Bum</h5>
+                        </div>
+                    </div>
+    
+                    <div class="ecualizer">
+                        <i class='bx bx-equalizer bx-lg bx-fade-left' style='color:#ffffff'></i>
+                    </div>
+    
+                    <div class="player__icons">
+                        <audio id="song">
+                            <source id="audio" src="./assets/audio/Mardy Bum.mp3" type="audio/mpeg">
+                        </audio>
+                        <i id="back" class='pointer bx bx-skip-next-circle bx-sm bx-rotate-180'
+                            style='color:rgba(230,230,230,0.98)'></i>
+                        <i id="play" class="pointer bx bx-play-circle bx-md bx-tada"
+                            style="color:rgba(238,115,115,100%)"></i>
+                        <i id="next" class='pointer bx bx-skip-next-circle bx-sm' style='color:rgba(230,230,230,0.98)'></i>
                     </div>
                 </div>
 
-                <div class="ecualizer">
-                    <i class='bx bx-equalizer bx-lg bx-fade-left' style='color:#ffffff'  ></i>
+                <div class="box reproductor__portable__box top__2021">
+                    <img id="banner" src="./assets/images/top2021.jpg" />
+                    <div>
+                        <div class="reproductor__info">
+                            <h5 id="song__name">Top 2021</h5>
+                        </div>
+                    </div>
+    
+                    <div class="ecualizer">
+                        <i class='bx bx-equalizer bx-lg bx-fade-left' style='color:#ffffff'></i>
+                    </div>
+    
+                    <div class="player__icons">
+                        <audio id="song">
+                            <source id="audio" src="./assets/audio/Mardy Bum.mp3" type="audio/mpeg">
+                        </audio>
+                        <i id="back" class='pointer bx bx-skip-next-circle bx-sm bx-rotate-180'
+                            style='color:rgba(230,230,230,0.98)'></i>
+                        <i id="play" class="pointer bx bx-play-circle bx-md bx-tada"
+                            style="color:rgba(238,115,115,100%)"></i>
+                        <i id="next" class='pointer bx bx-skip-next-circle bx-sm' style='color:rgba(230,230,230,0.98)'></i>
+                    </div>
                 </div>
-
-                <div class="player__icons" >
-                    <audio id="song">
-                        <source  id="audio" src="./assets/audio/Mardy Bum.mp3" type="audio/mpeg">
-                    </audio>
-                    <i id="back" class='pointer bx bx-skip-next-circle bx-sm bx-rotate-180' style='color:rgba(230,230,230,0.98)' ></i>
-                    <i id="play" class="pointer bx bx-play-circle bx-md bx-tada" style="color:rgba(238,115,115,100%)"></i>
-                    <i id="next" class='pointer bx bx-skip-next-circle bx-sm' style='color:rgba(230,230,230,0.98)' ></i>
+                <div class="box reproductor__portable__box">
+                    <img id="banner" src="./assets/images/dailyMix.jfif" />
+                    <div>
+                        <div class="reproductor__info">
+                            <h5 id="song__name">Dayly Mix</h5>
+                        </div>
+                    </div>
+    
+                    <div class="ecualizer">
+                        <i class='bx bx-equalizer bx-lg bx-fade-left' style='color:#ffffff'></i>
+                    </div>
+    
+                    <div class="player__icons">
+                        <audio id="song">
+                            <source id="audio" src="./assets/audio/Mardy Bum.mp3" type="audio/mpeg">
+                        </audio>
+                        <i id="back" class='pointer bx bx-skip-next-circle bx-sm bx-rotate-180'
+                            style='color:rgba(230,230,230,0.98)'></i>
+                        <i id="play" class="pointer bx bx-play-circle bx-md bx-tada"
+                            style="color:rgba(238,115,115,100%)"></i>
+                        <i id="next" class='pointer bx bx-skip-next-circle bx-sm' style='color:rgba(230,230,230,0.98)'></i>
+                    </div>
                 </div>
             </div>
+
+            
         </section>
 
         <aside class="aside">
@@ -175,6 +228,10 @@
         </aside>
 
     </div>
+
+    <footer id="footer">
+        <h3>En Desarrollo | Eury Joel @2022</h3>
+    </footer>
 
     <!-- scripts -->
     <script src="./assets/main.js"></script>

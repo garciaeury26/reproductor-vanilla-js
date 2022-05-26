@@ -6,11 +6,12 @@
 }
 
 body {
-    padding: 2rem;
     margin: 0;
-    background:#e8e8f0 ;  
+    background: #e8e8f0;
     font-family: "Poppins";
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+
 }
 
 header {
@@ -19,18 +20,64 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-right: 2rem;
+    padding: 2rem;
 }
 
-.pointer{
+
+.menu__icon {
+    visibility: hidden;
+}
+
+.dropdown {
+    width: 13%;
+    position: relative;
+    display: flex;
+    background-color: #222;
+}
+
+.dropdown-content {
+    transition: all 300ms;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    min-width: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 2rem;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.pointer {
     cursor: pointer;
 }
 
 .icons__top {
-    width: 15%;
+    width: 40%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+}
+
+.icons__top i{
+    margin-right: 13px;
 }
 
 .icons__top i {
@@ -40,13 +87,13 @@ header {
 .icons__top span {
     font-size: .7rem;
     overflow: hidden;
-
+    margin-right: 13px;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
 .icons__top img {
-    width: 20%;
+    width: 10%;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -170,18 +217,26 @@ p {
 
 
 /* bottom boexes */
+.boxes{
+    display: flex;
+    justify-content:space-between;
+    height: 93%;
+    padding: 1rem;
+}
+
 .reproductor__portable__box {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 2fr;
 
     background: linear-gradient(180deg, #CD3C61 0%, #334AC5 100%);
     height: 30%;
     width: 30%;
+    padding: 2rem;
     border-radius: 19px;
     place-content: center;
     place-items: center;
 }
+
 
 
 .reproductor__portable__box img {
@@ -190,13 +245,122 @@ p {
     width: 50%;
     min-width: 50%;
 }
-.reproductor__portable__box .reproductor__info{
+
+.reproductor__portable__box .reproductor__info {
     text-align: center;
 }
 
-.reproductor__info h5{
+.reproductor__info h5 {
     margin: 0;
     font-size: 1rem;
     color: #F8B6E6;
 }
 
+/**footer**/
+
+footer {
+    max-width: 100%;
+    width: 100%;
+    height: 10%;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    color: #B7B7C1;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 845px) {
+
+    .menu__icon {
+        visibility: visible;
+    }
+
+    header .icons__top {
+        width: 60%;
+    }
+
+    .main__container {
+        grid-template-columns: 3fr;
+        padding: 1rem;
+        place-content: center;
+        place-items: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .song {
+        width: auto;
+
+        justify-content: space-around;
+    }
+
+    .info__song h2 {
+        font-size: .8rem;
+    }
+
+    .info__song h5 {
+        font-size: 9px;
+    }
+
+    .song__image__container {
+        width: 40%;
+        padding: 3px;
+    }
+
+    .song__image__container img {
+        width: 40%;
+        height: auto;
+        object-fit: fill;
+    }
+
+    .info__container {
+        width: 100%;
+        flex-direction: column-reverse;
+        margin-left: 2rem;
+    }
+
+    .boxes{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .reproductor__portable__box {
+        width: 70%;
+        border-radius: 9px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+}
+
+/* @media screen and (max-width: 719px) {
+   
+    .info__song h2{
+        font-size: .8rem;
+    }
+
+    .info__song h5{
+        font-size:9px;
+    }
+    .song__image__container {
+        width: 19%;
+        padding: 3px;
+    }
+    .song__image__container img{
+        width: 100%;
+        object-fit: fill;
+    } .info__container{
+        width: 100%;
+        flex-direction: column-reverse;
+        margin-left: 2rem;
+    }.reproductor__portable__box{
+        width: 70%;
+        border-radius:9px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+}
+ */
