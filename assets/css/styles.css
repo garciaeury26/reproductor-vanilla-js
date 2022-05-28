@@ -269,7 +269,8 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     margin-top: auto;
-    bottom: 0%;
+    top: 0%;
+    position: relative;
 }
 
 @media screen and (max-width: 845px) {
