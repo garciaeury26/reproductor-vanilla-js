@@ -1,13 +1,30 @@
-const banner = document.getElementById("banner");
-let song = document.getElementById("song") // esta tiene los metos de reproducion
-let audio = document.getElementById("audio") // esta es la etique que tiere srcs
+const banner = document.getElementById("banner"); // portada de imagen
+
+// esta tiene los metos de reproducion
+let song = document.getElementById("song")
+let song2 = document.getElementById("song2")
+let song3 = document.getElementById("song3")
+
+// esta es la etique que tiere src
+let audio = document.getElementById("audio")
+let audio2 = document.getElementById("audio2")
+
 const songName = document.getElementById("song__name")
+
 let counter = 0;
 
 const btnPlay = document.getElementById("play");
+const btnPlay2 = document.getElementById("play2");
+const btnPlay3 = document.getElementById("play3");
+
 let playState = false;
 const btnBack = document.getElementById("back")
 const btnNext = document.getElementById("next")
+
+// playlist que se esta reproduciendo
+let musisPlayin1 = false;
+let musisPlayin2 = false;
+let musisPlayin13 = false;
 
 const songs = [
     {
@@ -42,17 +59,67 @@ const songs = [
     },
 ]
 
-btnPlay.addEventListener("click", () => {
+
+
+btnPlay.addEventListener("click", (e) => {
+    song2.pause();
+    song3.pause();
+    btnPlay2.className = "pointer bx bx-play-circle bx-md bx-tada"
+    btnPlay3.className = "pointer bx bx-play-circle bx-md bx-tada"
+
+
     if (!playState) {
         playState = !playState
         btnPlay.className = "pointer bx bx-pause-circle bx-md bx-tada"
 
         song.play();
-        console.log(song)
+        console.log(e)
     } else {
         playState = !playState
         btnPlay.className = "pointer bx bx-play-circle bx-md bx-tada"
         song.pause()
+    }
+
+});
+
+btnPlay2.addEventListener("click", (e) => {
+    song.pause();
+    song3.pause();    
+    btnPlay.className = "pointer bx bx-play-circle bx-md bx-tada"
+    btnPlay3.className = "pointer bx bx-play-circle bx-md bx-tada"
+
+    if (!playState) {
+        playState = !playState
+        btnPlay2.className = "pointer bx bx-pause-circle bx-md bx-tada"
+
+        song2.play();
+        console.log(e)
+    } else {
+        playState = !playState
+        btnPlay2.className = "pointer bx bx-play-circle bx-md bx-tada"
+        song2.pause()
+
+
+    }
+});
+
+btnPlay3.addEventListener("click", (e) => {
+    song.pause();
+    song2.pause();
+    btnPlay.className = "pointer bx bx-play-circle bx-md bx-tada"
+    btnPlay2.className = "pointer bx bx-play-circle bx-md bx-tada"
+
+    if (!playState) {
+        playState = !playState
+        btnPlay3.className = "pointer bx bx-pause-circle bx-md bx-tada"
+
+        song3.play();
+        console.log(e)
+    } else {
+        playState = !playState
+        btnPlay3.className = "pointer bx bx-play-circle bx-md bx-tada"
+        song3.pause()
+
     }
 });
 

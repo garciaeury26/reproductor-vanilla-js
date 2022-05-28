@@ -23,6 +23,10 @@ header {
     padding: 2rem;
 }
 
+a{
+    color: black;
+}
+
 
 .menu__icon {
     visibility: hidden;

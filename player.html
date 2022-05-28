@@ -18,12 +18,12 @@
         <h1>Music</h1>
 
         <div class="icons__top">
-                <i class='menu__icon bx bx-menu bx-sm'></i>
-             
-                <i class='bx bx-bell bx-sm  bx-tada-hover'></i>
-                <i class='bx bx-cog bx-sm bx-spin-hover'></i>
-                <span>Eury Joel</span>
-                    <img src="/assets/images/perfil.jfif">
+            <i class='menu__icon bx bx-menu bx-sm'></i>
+
+            <i class='bx bx-bell bx-sm  bx-tada-hover'></i>
+            <i class='bx bx-cog bx-sm bx-spin-hover'></i>
+            <span>Eury Joel</span>
+            <img src="/assets/images/perfil.jfif">
         </div>
     </header>
     <div class="main__container">
@@ -70,20 +70,21 @@
                             <h5 id="song__name">Mardy Bum</h5>
                         </div>
                     </div>
-    
+
                     <div class="ecualizer">
                         <i class='bx bx-equalizer bx-lg bx-fade-left' style='color:#ffffff'></i>
                     </div>
-    
+
                     <div class="player__icons">
-                        <audio id="song">
+                        <audio id="song"  preload="auto">
                             <source id="audio" src="./assets/audio/Mardy Bum.mp3" type="audio/mpeg">
                         </audio>
                         <i id="back" class='pointer bx bx-skip-next-circle bx-sm bx-rotate-180'
                             style='color:rgba(230,230,230,0.98)'></i>
                         <i id="play" class="pointer bx bx-play-circle bx-md bx-tada"
                             style="color:rgba(238,115,115,100%)"></i>
-                        <i id="next" class='pointer bx bx-skip-next-circle bx-sm' style='color:rgba(230,230,230,0.98)'></i>
+                        <i id="next" class='pointer bx bx-skip-next-circle bx-sm'
+                            style='color:rgba(230,230,230,0.98)'></i>
                     </div>
                 </div>
 
@@ -94,20 +95,19 @@
                             <h5 id="song__name">Top 2021</h5>
                         </div>
                     </div>
-    
+
                     <div class="ecualizer">
                         <i class='bx bx-equalizer bx-lg bx-fade-left' style='color:#ffffff'></i>
                     </div>
-    
+
                     <div class="player__icons">
-                        <audio id="song">
-                            <source id="audio" src="./assets/audio/Mardy Bum.mp3" type="audio/mpeg">
+                        <audio id="song2"  preload="metadata">
+                            <source id="audio2" src="./assets/audio/Mardy Bum.mp3" type="audio/mpeg">
                         </audio>
-                        <i id="back" class='pointer bx bx-skip-next-circle bx-sm bx-rotate-180'
-                            style='color:rgba(230,230,230,0.98)'></i>
-                        <i id="play" class="pointer bx bx-play-circle bx-md bx-tada"
+
+                        <i id="play2" class="pointer bx bx-play-circle bx-md bx-tada"
                             style="color:rgba(238,115,115,100%)"></i>
-                        <i id="next" class='pointer bx bx-skip-next-circle bx-sm' style='color:rgba(230,230,230,0.98)'></i>
+
                     </div>
                 </div>
                 <div class="box reproductor__portable__box">
@@ -117,25 +117,24 @@
                             <h5 id="song__name">Dayly Mix</h5>
                         </div>
                     </div>
-    
+
                     <div class="ecualizer">
                         <i class='bx bx-equalizer bx-lg bx-fade-left' style='color:#ffffff'></i>
                     </div>
-    
+
                     <div class="player__icons">
-                        <audio id="song">
-                            <source id="audio" src="./assets/audio/Mardy Bum.mp3" type="audio/mpeg">
+                        <audio id="song3"  preload="metadata">
+                            <source id="audio3" src="./assets/audio/Mardy Bum.mp3" type="audio/mpeg">
                         </audio>
-                        <i id="back" class='pointer bx bx-skip-next-circle bx-sm bx-rotate-180'
-                            style='color:rgba(230,230,230,0.98)'></i>
-                        <i id="play" class="pointer bx bx-play-circle bx-md bx-tada"
+
+                        <i id="play3" class="pointer bx bx-play-circle bx-md bx-tada"
                             style="color:rgba(238,115,115,100%)"></i>
-                        <i id="next" class='pointer bx bx-skip-next-circle bx-sm' style='color:rgba(230,230,230,0.98)'></i>
+
                     </div>
                 </div>
             </div>
 
-            
+
         </section>
 
         <aside class="aside">
@@ -145,9 +144,6 @@
 
             <div class="songs__container" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <article class="song" id="sunflower">
-                    <audio id="song__1">
-                        <source src="./assets/audio/Post Malone Swae Lee  Sunflower SpiderMan Into the SpiderVerse.mp3">
-                    </audio>
                     <div class="song__image__container">
                         <img src="./assets/images/sunflower.jfif">
                     </div>
@@ -155,12 +151,14 @@
                         <h2>Sunflower</h2>
                         <h5>Post Malone</h5>
                     </div>
+                    <a 
+                    href="./assets/audio/Post Malone Swae Lee  Sunflower SpiderMan Into the SpiderVerse.mp3"
+                    download="./assets/audio/Post Malone Swae Lee  Sunflower SpiderMan Into the SpiderVerse.mp3">
+                
                     <i class='bx bxs-download bx-border-circle bx-sm  bx-burst-hover'></i>
+                </a>
                 </article>
                 <article class="song" id="beggin">
-                    <audio id="song__2">
-                        <source src="./assets/audio/Cmo sonara MNESKIN  BEGGIN en Espaol  Nico Borie.mp3">
-                    </audio>
                     <div class="song__image__container">
                         <img src="./assets/images/beggin.jfif">
                     </div>
@@ -168,20 +166,27 @@
                         <h2>Beggin</h2>
                         <h5>Maneskin</h5>
                     </div>
+                    <a 
+                    href="./assets/audio/Cmo sonara MNESKIN  BEGGIN en Espaol  Nico Borie.mp3"
+                    download="./assets/audio/Cmo sonara MNESKIN  BEGGIN en Espaol  Nico Borie.mp3">
+                
                     <i class='bx bxs-download bx-border-circle bx-sm  bx-burst-hover'></i>
+                </a>
                 </article>
                 <article class="song" id="aneurysm">
-                    <audio id="song__3">
-                        <source src="./assets/audio/Nirvana  Aneurysm Live At The Paramount Seattle  1991.mp3">
-                    </audio>
                     <div class="song__image__container">
                         <img src="./assets/images/Aneurysm.jfif">
                     </div>
-                    <div class="info__song">
-                        <h2>Aneurysm</h2>
+                    <div  class="info__song">
+                        <h2> Aneurysm</h2>
                         <h5>Nirvana</h5>
                     </div>
+                    <a 
+                    href="./assets/audio/Nirvana  Aneurysm Live At The Paramount Seattle  1991.mp3"
+                    download="./assets/audio/Nirvana  Aneurysm Live At The Paramount Seattle  1991.mp3">
+                
                     <i class='bx bxs-download bx-border-circle bx-sm  bx-burst-hover'></i>
+                </a>
                 </article>
                 <article class="song" id="cornerstone">
                     <audio id="song__4">
@@ -194,7 +199,12 @@
                         <h2>Cornerstone</h2>
                         <h5>Artic Monkeys</h5>
                     </div>
-                    <i class='bx bxs-download bx-border-circle bx-sm  bx-burst-hover'></i>
+                    <a 
+                        href="./assets/audio/Arctic Monkeys  Cornerstone Official Video.mp3"
+                        download="./assets/audio/Arctic Monkeys  Cornerstone Official Video.mp3">
+                    
+                        <i class='bx bxs-download bx-border-circle bx-sm  bx-burst-hover'></i>
+                    </a>
                 </article>
                 <article class="song" id="playa">
                     <audio id="song__5">
@@ -207,7 +217,12 @@
                         <h2>Playa</h2>
                         <h5>Mike Towers</h5>
                     </div>
+                    <a 
+                    href="./assets/audio/Myke Towers  La Playa Video Oficial.mp3"
+                    download="./assets/audio/Myke Towers  La Playa Video Oficial.mp3">
+                
                     <i class='bx bxs-download bx-border-circle bx-sm  bx-burst-hover'></i>
+                </a>
                 </article>
                 <article class="song" id="company">
                     <audio id="song__6">
@@ -220,17 +235,23 @@
                         <h2>Company</h2>
                         <h5>Justin Biber</h5>
                     </div>
+                    <a 
+                    href="./assets/audio/Justin Bieber  Company Official Music Video.mp3"
+                    download="./assets/audio/Justin Bieber  Company Official Music Video.mp3">
+                
                     <i class='bx bxs-download bx-border-circle bx-sm  bx-burst-hover'></i>
-
+                </a>
 
                 </article>
             </div>
         </aside>
     </div>
+
+    <footer id="footer">
+        <h3>&copy; En Desarrollo | Eury Joel 2022</h3>
     
-            <footer id="footer">
-                <h3>&copy; En Desarrollo | Eury Joel 2022</h3>
-            </footer>
+
+    </footer>
 
 
     <!-- scripts -->
